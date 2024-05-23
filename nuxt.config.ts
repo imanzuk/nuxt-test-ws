@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.DEVTOOLS_ENABLED },
   modules: ['@nuxtjs/supabase', "@nuxt/ui", '@pinia/nuxt'],
   ui: {
     notifications: {
